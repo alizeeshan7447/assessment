@@ -20,9 +20,6 @@ use App\Models\User;
 */
 
 Route::get('/', function () {
-    Merchant::factory()
-            ->for(User::factory())
-            ->create();
     return view('welcome');
 });
 
